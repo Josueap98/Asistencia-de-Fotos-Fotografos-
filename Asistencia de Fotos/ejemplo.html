@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      body{
+        padding:40px;
+        min-height: 100%;
+        max-width: 100%;
+        background-image: linear-gradient(to left, #008080, #89cff0);
+        margin: 0 auto;
+        position: center;
+      }
+
+      label#labelcolor{
+        color: #191970;
+      }
+
+      span{
+          margin-left: 10px;
+      }
+      
+    </style>
+    <a href="url a direccionar"><img src="url de tu logo" alt="LOGO-TOGAS-MARGEN" border="0"></a>
+    <title>Togas Y Reconocimientos Lupita</title>
+
+  </head>
+  
+  <body>
+    
+    <div>
+      <h1> Nombr empresa</h1>
+    </div>
+      
+    <h2>
+      <? var data = userData ?>
+        <div><label id="labelcolor" for="plantel">Plantel:</label><span><?= data.plantel ?></span></div>
+        <div><label id="labelcolor" for="nombre">Nombre:</label><span><?= data.nombre ?></span></div>
+        <div><label id="labelcolor" for="grupo">Grupo:</label><span><?= data.grupo ?></span></div>
+        <div><label id="labelcolor" for="paquete">Paquete:</label><span><?= data.paquete ?></span></div>
+        <div><label id="labelcolor" for="extra">Extra:</label><span><?= data.extra ?></span></div>
+        <div><label id="labelcolor" for="fecha">Fecha:</label><span><?= data.fecha ?></span></div>
+
+      
+        <form id="formularioPersona" name="formularioPersona" class="needs-validation" method="post" action="<?= pubUrl ?>" novalidate>
+      <h2>
+        <label id="labelcolor" for="opciones">Selecciona un fotografo:</label>
+        <select class="opciones" name="opciones" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="Camara 1">Camara 1</option>
+          <option value="Camara 2">Camara 2</option>
+          <option value="Camara 3">Camara 3</option>
+          <option value="Otro">Otro</option>
+        </select>
+        <button class="btn btn-primary" onclick="submitform()">Enviar</button>
+        </h2>
+      </form>
+      
+    </h2>
+    <br>
+    <p>Asistencia de Fotos <a href="OPCIONAL URL DE HOJA DESTINO DE ENVIO DE DATOS" target="_blank">Escuela</a></p>
+      
+  </body>
+  
+</html>

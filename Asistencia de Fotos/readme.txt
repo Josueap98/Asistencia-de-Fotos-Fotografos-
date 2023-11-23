@@ -30,7 +30,7 @@ Google Spreadsheet
 
 ------------------------------------Formulas------------------------------------------------
 
-=ARRAYFORMULA(SI(C2:C<>"";"?nombre="&F2:F&"&grupo="&E2:E&"&paquete="&G2:G&"&extra="&J2:J;""));//parametros a leer
-=ARRAYFORMULA(SI(O2:O<>"";"segundo script"&O2:O;""))//script que guarda los parametros leidos
-=ARRAYFORMULA(SI(P2:P<>"";"https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl="&ENCODEURL(P2:P);""))//generador de los QR
+=ARRAYFORMULA(SI(C2:C<>"";"?nombre="&F2:F&"&grupo="&E2:E&"&paquete="&G2:G&"&extra="&J2:J;"")); //parametros a leer
+=ARRAYFORMULA(SI(O2:O<>"";"segundo script"&O2:O;"")) //script que guarda los parametros leidos
+=ARRAYFORMULA(SI(P2:P<>"";"https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl="&ENCODEURL(P2:P);"")) //generador de los QR
 
